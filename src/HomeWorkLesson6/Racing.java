@@ -18,12 +18,12 @@ public class Racing {
         animalList.add(dog);
         animalList.add(horse);
 
-        int Tiger = new SecureRandom().nextInt(100);
-        System.out.printf("Speed of Tiger = %d\n", Tiger);
-        int Horse = new SecureRandom().nextInt(75);
-        System.out.printf("Speed of Horse = %d\n", Horse);
-        int Dog = new SecureRandom().nextInt(60);
-        System.out.printf("Speed of Dog = %d\n", Dog);
+        int tiGer = new SecureRandom().nextInt(100);
+        System.out.printf("Speed of Tiger = %d\n", tiGer);
+        int hoRse = new SecureRandom().nextInt(75);
+        System.out.printf("Speed of Horse = %d\n", hoRse);
+        int doG = new SecureRandom().nextInt(60);
+        System.out.printf("Speed of Dog = %d\n", doG);
 
 
         int guessing = 0;
@@ -31,14 +31,14 @@ public class Racing {
 
 
         do {
-            if (Tiger >= Horse && Tiger >= Dog) {
-                System.out.println("Win is Tiger with speed : " + Tiger);
+            if (tiGer >= hoRse && tiGer >= doG) {
+                System.out.println("Win is Tiger with speed : " + tiGer);
             }
-            if (Horse >= Tiger && Horse >= Dog) {
-                System.out.println("Win is Horse with speed: " + Horse);
+            if (hoRse >= tiGer && hoRse >= doG) {
+                System.out.println("Win is Horse with speed: " + hoRse);
             }
-            if (Dog >= Tiger && Dog >= Horse) {
-                System.out.println("Win is Dog with speed: " + Dog);
+            if (doG >= tiGer && doG >= hoRse) {
+                System.out.println("Win is Dog with speed: " + doG);
             }
             break;
         } while (guessing < MAX_GUESS);
