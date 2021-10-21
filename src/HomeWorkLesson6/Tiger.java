@@ -1,16 +1,20 @@
 package HomeWorkLesson6;
 
-public class Tiger extends Animal {
+import java.security.SecureRandom;
 
+public class Tiger extends Animal {
     public Tiger() {
     }
 
     @Override
     protected int getSpeed() {
-        return 0;
+        int tigerRandom;
+        tigerRandom = new SecureRandom().nextInt(100);
+        return tigerRandom;
     }
 
-//    public static void ttt(){
-//        System.out.println("Tiger Tiger Tiger");
-//    }
+    @Override
+    protected void speak() {
+        super.speak();
+    }
 }

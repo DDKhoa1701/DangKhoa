@@ -1,22 +1,27 @@
 package HomeWorkLesson6;
 
 public class Animal {
+
     private int speed;
 
     public Animal() {
     }
 
+    public Animal(int speed) {
+        this.speed = speed;
+    }
+
     protected int getSpeed() {
-        return 0;
+        return speed;
     }
 
     public void setSpeed(int speed) {
         this.speed = speed;
     }
 
-//    protected static void aaa(){
-//        System.out.println("Animal Animal Animal Animal");
-//    }
+    protected void speak() {
+        System.out.println("Speak !!!!!");
+    }
 }
 
 

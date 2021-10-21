@@ -1,13 +1,15 @@
 package HomeWorkLesson6;
 
+import java.security.SecureRandom;
+
 public class Dog extends Animal {
+    public Dog() {
+    }
 
     @Override
     protected int getSpeed() {
-        return 0;
+        int dogRandom;
+        dogRandom = new SecureRandom().nextInt(100);
+        return dogRandom;
     }
-
-//    public static void ddd(){
-//        System.out.println("Dog Dog Dog");
-//    }
 }
