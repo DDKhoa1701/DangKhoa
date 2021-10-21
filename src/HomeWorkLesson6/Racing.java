@@ -13,11 +13,11 @@ public class Racing {
 
 
         if (tiger.getSpeed() > horse.getSpeed() && tiger.getSpeed() > dog.getSpeed()) {
-            System.out.println("Winner is " + tiger.getClass().getSimpleName() + " with speed = " + tiger.getSpeed());
+            System.out.println("Winner is " + tiger.getClass().getSimpleName() + " with speed = " + tiger.getSpeed()+ "Km/h");
         } else if (horse.getSpeed() > tiger.getSpeed() && horse.getSpeed() > dog.getSpeed()) {
-            System.out.println("Winner is " + horse.getClass().getSimpleName() + " with speed = " + horse.getSpeed());
+            System.out.println("Winner is " + horse.getClass().getSimpleName() + " with speed = " + horse.getSpeed()+ "Km/h");
         } else {
-            System.out.println("Winner is " + dog.getClass().getSimpleName() + " with speed = " + dog.getSpeed());
+            System.out.println("Winner is " + dog.getClass().getSimpleName() + " with speed = " + dog.getSpeed()+ "Km/h");
         }
         System.out.println("End !!!");
     }

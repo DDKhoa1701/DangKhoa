@@ -9,7 +9,7 @@ public class Tiger extends Animal {
     @Override
     protected int getSpeed() {
         int tigerRandom;
-        tigerRandom = new SecureRandom().nextInt(100);
+        tigerRandom = new SecureRandom().nextInt(200);
         return tigerRandom;
     }
 
