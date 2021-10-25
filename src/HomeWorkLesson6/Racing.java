@@ -1,27 +1,45 @@
 package HomeWorkLesson6;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class Racing {
 
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
 
 
-        Tiger tiger = new Tiger();
-        Horse horse = new Horse();
-        Dog dog = new Dog();
+        Animal tiger = new Tiger ();
+        Animal horse = new Horse ();
+        Animal dog = new Dog ();
 
 
-        if (tiger.getSpeed() > horse.getSpeed() && tiger.getSpeed() > dog.getSpeed()) {
-            System.out.println("Winner is " + tiger.getClass().getSimpleName() + " with speed = " + tiger.getSpeed()+ "Km/h");
-        } else if (horse.getSpeed() > tiger.getSpeed() && horse.getSpeed() > dog.getSpeed()) {
-            System.out.println("Winner is " + horse.getClass().getSimpleName() + " with speed = " + horse.getSpeed()+ "Km/h");
-        } else {
-            System.out.println("Winner is " + dog.getClass().getSimpleName() + " with speed = " + dog.getSpeed()+ "Km/h");
+        List<Animal> animals = new ArrayList<> ();
+        animals.add (tiger);
+        animals.add (horse);
+        animals.add (dog);
+
+        for (Animal animal : animals) {
+            System.out.println ("Animal: " + animal.getClass ().getSimpleName () + " - speed = " + animal.getSpeed ());
         }
-        System.out.println("End !!!");
+
+        Animal winner = null;
+
+        for (Animal animal : animals) {
+            if (winner == null) {
+                winner = animal;
+            } else {
+                if (animal.getSpeed () > winner.getSpeed ())
+                    winner = animal;
+            }
+        }
+        System.out.println ("Winner is " + winner.getClass ().getSimpleName () + " with speed : " + winner.getSpeed ());
+        System.out.println ("------Finish------");
     }
 }
+
+
+
 
 
 

@@ -4,24 +4,17 @@ public class Animal {
 
     private int speed;
 
-    public Animal() {
+    public Animal () {
     }
 
-    public Animal(int speed) {
+    public Animal (int speed) {
         this.speed = speed;
     }
 
-    protected int getSpeed() {
-        return speed;
+    protected int getSpeed () {
+        return this.speed;
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
-
-    protected void speak() {
-        System.out.println("Speak !!!!!");
-    }
 }
 
 

@@ -3,18 +3,10 @@ package HomeWorkLesson6;
 import java.security.SecureRandom;
 
 public class Tiger extends Animal {
+
+    private static final int MAX_SPEED = 100;
+
     public Tiger() {
-    }
-
-    @Override
-    protected int getSpeed() {
-        int tigerRandom;
-        tigerRandom = new SecureRandom().nextInt(200);
-        return tigerRandom;
-    }
-
-    @Override
-    protected void speak() {
-        super.speak();
+        super(new SecureRandom().nextInt(MAX_SPEED));
     }
 }

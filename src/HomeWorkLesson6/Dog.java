@@ -3,13 +3,10 @@ package HomeWorkLesson6;
 import java.security.SecureRandom;
 
 public class Dog extends Animal {
-    public Dog() {
-    }
 
-    @Override
-    protected int getSpeed() {
-        int dogRandom;
-        dogRandom = new SecureRandom().nextInt(50);
-        return dogRandom;
+    private static final int MAX_SPEED = 60;
+
+    public Dog () {
+        super (new SecureRandom ().nextInt (MAX_SPEED));
     }
 }
