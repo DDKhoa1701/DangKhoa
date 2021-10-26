@@ -2,9 +2,7 @@ package Lab6_2;
 
 
 import java.security.SecureRandom;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Racing {
 
@@ -48,6 +46,8 @@ public class Racing {
 
         List<Animal> animalList = Arrays.asList (bear, wolf, mink, owl, dove);
         List<Animal> raceTest = new ArrayList<> ();
+
+
         for (Animal animal : animalList) {
             if (!animal.isFlyable ())
                 raceTest.add (animal);
@@ -71,5 +71,8 @@ public class Racing {
         System.out.println ("Winner is " + winner.getName () + " with speed : " + winner.getSpeed ());
         System.out.println ("\t------Finish------");
     }
+
+
+
 }
 
