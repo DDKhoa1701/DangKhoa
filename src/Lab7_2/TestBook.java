@@ -45,11 +45,11 @@ public class TestBook {
 
     private static void addBook () {
         Scanner scanneraddBook = new Scanner (System.in);
-        System.out.println ("Book ISBN : ");
+        System.out.print ("Book ISBN : ");
         String ISBN = scanneraddBook.nextLine ();
-        System.out.println ("Book title: ");
+        System.out.print ("Book title: ");
         String bookTile = scanneraddBook.nextLine ();
-        System.out.println ("Book's author name: ");
+        System.out.print ("Book's author name: ");
         String authorName = scanneraddBook.nextLine ();
         MainBook book = new MainBook (ISBN, bookTile, authorName);
         bookList.add (book);
@@ -61,7 +61,7 @@ public class TestBook {
             return;
         }
         Scanner scannerRetrieve = new Scanner (System.in);
-        System.out.println ("Book ISBN : ");
+        System.out.print ("Book ISBN : ");
         String ISBN = scannerRetrieve.nextLine ();
 
         MainBook returnedBook = null;
